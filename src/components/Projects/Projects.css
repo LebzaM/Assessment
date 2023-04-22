@@ -20,7 +20,7 @@
     justify-content: center;
     display: flex;
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 550px) {
        display:none
       }
 }
