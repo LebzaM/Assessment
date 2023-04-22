@@ -3,7 +3,7 @@ import '../About/About.css'
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Cylinder3d from '../Header/Cylinder3d';
-import Typical from 'react-typical';
+
 const About = () => {
   return (
     <div className="section_about">

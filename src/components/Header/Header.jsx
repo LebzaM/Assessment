@@ -1,9 +1,9 @@
 import React, { Component, useRef, useEffect } from 'react'
 import '../Header/Header.css'
 import Navbar from '../Navbar/Navbar'
-import Logo from '../Assets/sovtech.png'
-import Typical from 'react-typical';
 import Skills from '../Assets/skills.png'
+import Typed from 'typed.js';
+
 const Header = () => {
   const handleClickScroll = () => {
     const element = document.getElementById('scroll');
@@ -13,14 +13,32 @@ const Header = () => {
     }
   };
 
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['<i>Welcome</i>', '<i>My Name is</i>', '<i>Olebogeng</i>'],
+      typeSpeed: 50,
+      loop: true,
+      loopCount: 2,
+      showCursor: false,
+      fadeOut: true,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <div className="section_header">
       <Navbar />
       <div className='container_header'>
         <div className='title_container'>
-          <h1>
-            
-            <Typical 
+          <h1 ref={el}>
+          
+            {/* <Typical 
             loop={7}
             wrapper='h1'
             steps={[
@@ -28,7 +46,9 @@ const Header = () => {
               'My Name Is', 2000,
               'Olebogeng', 2000,
             ]}
-            />
+            /> */}
+
+
             {/* limit the loop instead of using infinty */}
 
           </h1>
