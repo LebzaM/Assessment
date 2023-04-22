@@ -8,7 +8,7 @@ const Header = () => {
   const handleClickScroll = () => {
     const element = document.getElementById('scroll');
     if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
+      //  Will scroll smoothly to the top of the next section
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
@@ -38,18 +38,7 @@ const Header = () => {
         <div className='title_container'>
           <h1 ref={el}>
           
-            {/* <Typical 
-            loop={7}
-            wrapper='h1'
-            steps={[
-              'Welcome', 2000,
-              'My Name Is', 2000,
-              'Olebogeng', 2000,
-            ]}
-            /> */}
-
-
-            {/* limit the loop instead of using infinty */}
+            
 
           </h1>
 

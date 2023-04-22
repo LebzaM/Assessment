@@ -17,6 +17,7 @@
 .section_navbar{
     display: flex;
     justify-content: center;
+    
     @media screen and (max-width: 550px) {
         width: 100%;
       }
@@ -31,8 +32,10 @@
     font-size: 20px;
     font-family: 'Arial Black';
 
-    @media screen and (max-width: 550px) {
-        display: none;
+    
+
+      @media screen and (max-width:550px){
+        display:none
       }
     
 }
