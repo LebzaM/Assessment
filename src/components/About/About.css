@@ -17,7 +17,7 @@
 
 .intro_container{
     flex: 1;
-    @media only screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         display: flex;
       }
 
@@ -32,7 +32,7 @@
     font-family: 'Rockwell';
     line-height: 30px;
     letter-spacing: 2px;
-    @media only screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         font-size: 15px;
         font-family: 'Rockwell';
         line-height: 20px;
@@ -48,7 +48,7 @@
     justify-content: center;
     gap: 20px;
 
-    @media only screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         display:none;
       }
     
