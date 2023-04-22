@@ -1,0 +1,111 @@
+.section_header{
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: 768px) {
+        height: 100vh;
+      }
+   
+
+    
+}
+
+.container_header{
+    height: 100vh;
+    scroll-snap-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+}
+
+.title_container{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    
+    @media only screen and (max-width: 768px) {
+        flex: 1;
+        align-items: center;
+      }
+
+}
+
+.title_container h1{
+    font-size: 60px;
+
+    @media only screen and (max-width: 768px) {
+        text-align: center;
+        font-size: 20px
+      }
+}
+.img_container{
+    flex: 3;
+    position: relative;
+
+    @media only screen and (max-width: 768px) {
+        flex: 1;
+        width: 100%;
+      }
+    
+}
+.button{
+    background-color: none;
+    color: none;
+    font-weight: 700;
+    width: 100px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium';
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    justify-content: center;
+}
+.img_container img{
+    width: 800px;
+    height: 400px;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: animate 2s infinite ease alternate;
+
+    @keyframes animate {
+        to {
+          transform: translateX(200px);
+        }
+      }
+      @keyframes {
+        to{
+            transform: translateX(50px);
+        }
+        
+      }
+
+      @media only screen and (max-width: 768px) {
+        width: 300px;
+        height: 300px;
+      }
+    /* Handle Animation */
+}
+
+
+
+
+
+
