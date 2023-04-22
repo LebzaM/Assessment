@@ -20,7 +20,7 @@ const Header = () => {
       strings: ['<i>Welcome</i>', '<i>My Name is</i>', '<i>Olebogeng</i>'],
       typeSpeed: 50,
       loop: true,
-      loopCount: 2,
+      loopCount: 3,
       showCursor: false,
       fadeOut: true,
     });
